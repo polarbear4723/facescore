@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google Tag Manager -->
+    <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K8FM83B');</script> -->
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>나의 얼굴 점수는?</title>
+    <meta name="title" content="얼굴 점수">
+    <meta name="description" content="인공지는이 보는 나의 얼굴 점수는 몇점일까? 구글 머신러닝을 이용한 나의 얼굴 점수를 확인하세요.">
+    <meta name="subject" content="인공지능으로 보는 나의 얼굴 점수를 확인하세요!">
+    <meta name="keywords" content="얼굴점수, face score, 인공지능, 외모 점수, 외모 등급">
+    <meta name="author" content="polarbear4723">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://myfacescore.netlify.app/">
+    <meta property="og:url" content="https://myfacescore.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="나의 얼굴 점수">
+    <meta property="og:description" content="인공지는이 보는 나의 얼굴 점수는 몇점일까? 구글 머신러닝을 이용한 나의 얼굴 점수를 확인하세요.">
+    <meta property="og:image" content="polar-bear.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e64b3727e862b06"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-145482737-6');
+    </script>
+    <meta name="naver-site-verification" content="01c7676f1398d79ac156b16c7ae0851bc6d9412f" />
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8FM83B"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <nav class="p-3 container navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="https://myfacescore.netlify.app//">인공지능으로 보는 나의 얼굴 점수</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">나의 얼굴 점수
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+					<a class="nav-link" href="https://myfacescore.netlify.app//#comment-4886228709">댓글
+						<span class="sr-only">(current)</span>
+					</a>
+				</li>
+            </ul>
+        </div>
+    </nav>
+    <section class="section">
+        <h1 class="title">나의 얼굴 점수</h1>
+        <div class="img-container" align="center">
+			<!-- Block parent element -->
+            <!-- <img src="score_stars.png" alt="facescore"> -->
+            <img src="score_stars_3.jpg" alt="facescore">
+            <p></p>
+		</div>
+        <h2 class="subtitle">인공지능이 보는 나의 외모 점수는?</h2>
+        <h2 class="sr-only">나는 어떤 연예인과 닮았을까? 나의 얼굴점수 찾기를 해보세요!</h2>
+        <h3 class="sr-only">대표 연예인 사진 데이터로 학습한 인공지능이 나의 얼굴로 얼굴점수를 찾아드립니다.</h3>
+        <h4 class="sr-only">본 서비스는 Google의 인공지능 teachable machine 2.0을 활용하였습니다.</h4>
+        <p class="sr-only">마스크 쓴 나의 얼굴, 연예인 누구와 닮았을까? 인공지능으로 얼굴점수를 찾아보세요! 연예인 사진 빅 데이터로 학습한 인공지능이 나의 얼굴로 얼굴점수를 매칭해 드립니다. 회원가입도 필요없이 화면에서 바로 확인해보세요! 사진 데이터는 그 어디에도 전송되지 않습니다. 인공지능이 보는 나의 얼굴점수 한번 해보세요! 얼굴점수 테스트를 통해 나와 닮은 연예인 찾기를 할 수 있습니다.</p>
+    </section>
+
+    <h3 class="pb-2 d-flex justify-content-center">성별을 선택하세요</h3>
+    <section class="d-flex justify-content-center">
+        <p class="d-flex align-items-center pr-3">여자</p>
+        <div>
+            <input type="checkbox" id="gender">
+            <label for="gender">
+                <span class="knob">
+                    <i></i>
+                </span>
+            </label>
+        </div>
+        <p class="d-flex align-items-center pl-3">남자</p>
+    </section>
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <div class="mt-3 container file-upload">
+        <div class="image-upload-wrap">
+            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+            <div class="drag-text">
+                <img src="upload.svg" class="mt-5 pt-5 upload">
+                <h3 class="mb-5 pb-5 pt-4  upload-text">얼굴 사진을 올려놓거나 눌러서 업로드하세요!</h3>
+            </div>
+        </div>
+        <div class="file-upload-content">
+            <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+            <div id="loading" class="animated bounce">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <p class="text-center">AI가 당신의 얼굴점수를 분석중입니다.</p>
+                <p class="text-center">사진 데이터는 그 어디에도 저장, 전송되지 않습니다.</p>
+            </div>
+            <p class="result-message"></p>
+            <div id="label-container" class="d-flex flex-column justify-content-around bd-highlight"></div>
+            <div id="addThis" class="addthis_inline_share_toolbox_6lz1"></div>
+
+            <div class="pt-3 image-title-wrap">
+                <button type="button p-2" class="try-again-btn" onclick="gaReload1();" data-toggle="modal" data-target="#adModal">
+                    <span class="try-again-text">다른 사진으로 재시도</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="coupang" class="container d-flex justify-content-center">
+        <script src="https://ads-partners.coupang.com/g.js"></script>
+        <script>
+            new PartnersCoupang.G({
+                "id": 141621,
+                "subId": null
+            });
+        </script>
+    </div> -->
+    <!-- 카카오 애드핏 -->
+    <div class="mt-2 container d-flex justify-content-center ad-banner">
+        <ins class="kakao_ad_area" style="display:none;" 
+data-ad-unit    = "DAN-TWhcCelOI75gPRcM" 
+data-ad-width   = "320" 
+data-ad-height  = "100"></ins> 
+    </div>
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    <div class="mt-2 container d-flex justify-content-center ad-banner">
+        <ins class="kakao_ad_area" style="display:none;" 
+data-ad-unit    = "DAN-IkCsfxURSmBeAxQp" 
+data-ad-width   = "320" 
+data-ad-height  = "100"></ins> 
+    </div>
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    <div class="modal-body d-flex justify-content-center">
+    <ins class="kakao_ad_area" style="display:none;" 
+data-ad-unit    = "DAN-NP4kjKex28qT5NcI" 
+data-ad-width   = "300" 
+data-ad-height  = "250"></ins> 
+    </div>
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    <!-- 카카오 애드핏 -->
+    <section id="yotube-bottom-link" class="mt-2 d-flex flex-column justify-content-center align-items-center" onclick="gtag('event', '조코딩 유튜브 클릭', {'event_category': '조코딩 유튜브 클릭','event_label': '하단 광고'});">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/s6SITKSN9Q0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h4 class="mt-1">By 조코딩 유튜브 채널. Modified by 북극곰.</h4>
+    </section>
+    <div class="container pt-3">
+        <div id="disqus_thread"></div>
+    </div>
+    <footer class="footer pt-5 container d-flex justify-content-center">
+        <div>
+            <p>&copy; polarbear4723 2021. All Rights Reserved. </p>
+            <p>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="adModal" tabindex="-1" role="dialog" aria-labelledby="adModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="adModalLabel">마스크를 착용한 사진을 올려주세요.</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button p-2" class="try-again-btn" onclick="gaReload2();">
+                        <span class="try-again-text">다른 사진으로 재시도</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function gaReload1() {
+            gtag('event', '다른 사진으로 재시도 1차', {
+                'event_category': '다른 사진으로 재시도'
+            });
+        }
+        function gaReload2() {
+            gtag('event', '다른 사진으로 재시도 2차', {
+                'event_category': '다른 사진으로 재시도'
+            });
+            window.location.reload();
+        }
+    </script>
+    <script>
+        (function() {
+        var d = document,
+            s = d.createElement('script');
+        s.src = 'https://facescore.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the
+        <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('.image-upload-wrap').hide();
+                    $('#loading').show();
+                    $('.file-upload-image').attr('src', e.target.result);
+                    $('.file-upload-content').show();
+                    $('.image-title').html(input.files[0].name);
+                };
+                reader.readAsDataURL(input.files[0]);
+                init().then(function() {
+                    console.log("hello");
+                    predict();
+                    $('#loading').hide();
+                });
+            } else {
+                removeUpload();
+            }
+        }
+
+        function removeUpload() {
+            $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+            $('.file-upload-content').hide();
+            $('.image-upload-wrap').show();
+        }
+        $('.image-upload-wrap').bind('dragover', function() {
+            $('.image-upload-wrap').addClass('image-dropping');
+        });
+        $('.image-upload-wrap').bind('dragleave', function() {
+            $('.image-upload-wrap').removeClass('image-dropping');
+        });
+    </script>
+    <script type="text/javascript">
+        let URL;
+        const urlMale = "https://teachablemachine.withgoogle.com/models/TK8-DN5UL/";
+        const urlFemale = "https://teachablemachine.withgoogle.com/models/5b5Uq2WsO/";
+        let model, webcam, labelContainer, maxPredictions;
+        async function init() {
+            if (document.getElementById("gender").checked) {
+                URL = urlMale;
+            } else {
+                URL = urlFemale;
+            }
+            const modelURL = URL + "model.json";
+            const metadataURL = URL + "metadata.json";
+            model = await tmImage.load(modelURL, metadataURL);
+            maxPredictions = model.getTotalClasses();
+            labelContainer = document.getElementById("label-container");
+            for (let i = 0; i < maxPredictions; i++) {
+                var element = document.createElement("div")
+                element.classList.add("d-flex");
+                labelContainer.appendChild(element);
+            }
+        }
+        async function predict() {
+            var image = document.getElementById("face-image")
+            const prediction = await model.predict(image, false);
+            prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+            console.log(prediction[0].className);
+            var resultTitle, resultExplain; //, resultCeleb;
+            if (document.getElementById("gender").checked) {
+                gtag('event', '얼굴점수 수행', {
+                    'event_category': '얼굴점수 수행',
+                    'event_label': '남자'
+                });
+                switch (prediction[0].className) {
+                    case "5star":
+                        // resultTitle = "★5"
+                        // resultExplain = "'2021 말랑말랑 모찌 같은 남자 아이돌' 1위"
+                        gtag('event', '남자 결과 5star', {'event_category': '남자 결과'});
+                        break;
+                        
+                    default:
+                        resultTitle = "알수없음"
+                        resultExplain = ""
+                        // resultCeleb = ""
+                        resultExplain = ""
+                        gtag('event', '남자 결과 알수없음', {'event_category': '남자 결과'});
+                }
+                // 얼굴점수 계산
+                var myresult = 0;
+                for (let i = 0; i < maxPredictions; i++) {
+                    myresult = myresult + prediction[i].probability.toFixed(2) * Number(prediction[i].className.charAt(0));
+                }
+                var toprank = 100;
+                switch (true) {
+                    case (myresult == 5):
+                        toprank = 3;
+                        break;
+                    case (myresult > 4):
+                        toprank = 5;
+                        break;
+                    case (myresult == 4):
+                        toprank = 13;
+                        break;
+                    case (myresult > 3):
+                        toprank = 20;
+                        break;
+                    case (myresult == 3):
+                        toprank = 45;
+                        break;
+                    case (myresult > 2):
+                        toprank = 70;
+                        break;
+                    case (myresult == 2):
+                        toprank = 81;
+                        break;
+                    case (myresult > 1):
+                        toprank = 92;
+                        break;
+                    case (myresult == 1):
+                        toprank = 96;
+                        break;                
+                }
+            } else {
+                gtag('event', '얼굴점수 수행', {
+                    'event_category': '얼굴점수 수행',
+                    'event_label': '여자'
+                });
+                // 얼굴점수 계산
+                var myresult = 0;
+                for (let i = 0; i < maxPredictions; i++) {
+                    myresult = myresult + prediction[i].probability.toFixed(2) * Number(prediction[i].className.charAt(0));
+                }
+                var toprank = 100;
+                switch (true) {
+                    case (myresult == 5):
+                        toprank = 4;
+                        break;
+                    case (myresult > 4):
+                        toprank = 7;
+                        break;
+                    case (myresult == 4):
+                        toprank = 18;
+                        break;
+                    case (myresult > 3):
+                        toprank = 29;
+                        break;
+                    case (myresult == 3):
+                        toprank = 53;
+                        break;
+                    case (myresult > 2):
+                        toprank = 76;
+                        break;
+                    case (myresult == 2):
+                        toprank = 85;
+                        break;
+                    case (myresult > 1):
+                        toprank = 94;
+                        break;
+                    case (myresult == 1):
+                        toprank = 97;
+                        break;                
+                }
+            }
+
+            var title = "<div class='mask-title'><span><p class='mask-subtitle'>최종평점</p><p>" + myresult.toFixed(2) + " 점</p></span><span><p class='mask-subtitle'>상위</p><p>" + toprank + "%</p></span></div>"
+
+            $('.result-message').html(title);// + explain);
+            var barWidth;
+            for (let i = 0; i < maxPredictions; i++) {
+                if (prediction[i].probability.toFixed(2) > 0.1) {
+                    barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
+                } else if (prediction[i].probability.toFixed(2) >= 0.01) {
+                    barWidth = "4%"
+                } else {
+                    barWidth = "2%"
+                }
+                var labelTitle;
+                switch (prediction[i].className) {
+                    case "5star":
+                        labelTitle = "★5"
+                        break;
+                    case "4star":
+                        labelTitle = "★4"
+                        break;
+                    case "3star":
+                        labelTitle = "★3"
+                        break;
+                    case "2star":
+                        labelTitle = "★2"
+                        break;
+                    case "1star":
+                        labelTitle = "★1"
+                        break;
+                }
+                var label = "<div class='mask-label d-flex align-items-center'>" + labelTitle + "</div>"
+                var bar = "<div class='bar-container position-relative container'><div class='s" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center s" + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
+                labelContainer.childNodes[i].innerHTML = label + bar;
+            }
+        }
+    </script>
+    <!-- <script>
+        function iosApp() {
+            document.getElementById("coupang").style.display="none";
+            $("#coupang ins").hide();
+            document.getElementById("addThis").style.display="none";
+            document.getElementById("disqus_thread").style.display="none";
+            var kakao = document.getElementsByClassName("kakao_ad_area");
+            for (var i = 0; i < kakao.length; i++) {
+                if(kakao[i]) {
+                    kakao[i].style.display="none";
+                }
+            }
+            document.getElementById("yotube-top-link").style.display="none";
+            document.getElementById("yotube-mid-link").style.display="none";
+            document.getElementById("yotube-bottom-link").style.display="none";
+        }
+    </script> -->
+</body>
+<!-- 
+image input box
+Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+gender toggle
+Copyright (c) 2020 by Mert Cukuren (https://codepen.io/knyttneve/pen/bPpEZY)
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+</html>
