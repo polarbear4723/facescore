@@ -134,6 +134,12 @@
             });
         </script>
     </div> -->
+    <section class="youtube pb-3" id="yotube-mid-link">
+        <div class="container mt-3 youtube-cover d-flex flex-row-reverse align-items-center" onclick="gtag('event', '조코딩 유튜브 클릭', {'event_category': '조코딩 유튜브 클릭','event_label': '화면 중간'});">
+            <img src="youtube-copy.jpg" alt="youtube-icon" class="youtube-icon">
+            <a href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg" class="youtube-link">제작도움: 조코딩 유튜브 채널</a>
+        </div>
+    </section>
     <!-- 카카오 애드핏 start -->
     <div class="mt-2 container d-flex justify-content-center ad-banner">
     <ins class="kakao_ad_area" style="display:none;" 
@@ -281,6 +287,7 @@ data-ad-height  = "250"></ins>
             const prediction = await model.predict(image, false);
             prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
             console.log(prediction[0].className);
+            // console.log(prediction);
             var resultTitle, resultExplain; //, resultCeleb;
             if (document.getElementById("gender").checked) {
                 gtag('event', '얼굴점수 수행', {
@@ -297,7 +304,6 @@ data-ad-height  = "250"></ins>
                     default:
                         resultTitle = "알수없음"
                         resultExplain = ""
-                        // resultCeleb = ""
                         resultExplain = ""
                         gtag('event', '남자 결과 알수없음', {'event_category': '남자 결과'});
                 }
