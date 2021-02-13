@@ -1,0 +1,3 @@
+User-agent: *
+Allow:/
+Sitemap: https://myfacescore.netlify.app/sitemap.xml
